@@ -29,6 +29,8 @@ on chat:
       set {_rank} to "&d&lHERO"
     if {rank::%uuid of player%} is "legend":
       set {_rank} to "&a&lLEGEND"
+    if {rank::%uuid of player%} is "twitch":
+      set {_rank} to "&5&lTWITCH"
   else:
     set {_rank} to ""
   send "%colored {_color}%%{_level}% %colored {_rank}% &e%player% &f%message%"
