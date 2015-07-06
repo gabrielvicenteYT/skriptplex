@@ -1,0 +1,17 @@
+#
+#Chat
+#
+on chat:
+  if {level::%uuid of player%} is set:
+    if {level::%uuid of player%} is less than 101:
+      if {level::%uuid of player%} is less than 80:
+        if {level::%uuid of player%} is less than 60:
+          if {level::%uuid of player%} is less than 40:
+            if {level::%uuid of player%} is less than 20:
+              if {level::%uuid of player%} is 0:
+              
+              else:
+                if {level::%uuid of player%} is less than 0
+     send "%{level::%uuid of player%}%
+  else:
+    
