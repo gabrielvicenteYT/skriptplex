@@ -7,3 +7,9 @@ command /testloc <number>:
   trigger:
     player is op
     teleport player to {loc.%arg 1%}
+on script load:
+  wait 5 seconds
+  if {_gamemode} is "sheepquest":
+    spawn a blue sheep named "&bBlue Team"
+    teleport last spawned sheep to {loc.1}
+  
