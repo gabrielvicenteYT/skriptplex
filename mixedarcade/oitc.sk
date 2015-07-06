@@ -13,6 +13,7 @@ on join:
 		set join message to "&8Join> &7%player%"
 	add 1 to {onlineplayers}
 every 5 ticks:
+  set {onlineplayers} to size of all players
 	if {countdown} is set:
 		if {onlineplayers} is more than 0:  #FIX
 			add 1 to {countdown.r}
