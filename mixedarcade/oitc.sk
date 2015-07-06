@@ -24,10 +24,6 @@ every 5 ticks:
 				set {ingame} to true
 				loop all players:
 					set {board::%uuid of loop-player%} to "ingame"
-				#Ding after 10
-				#White to orange
-				#ORange to white
-				#5 seconds
 			if {countdown} is set:
 				if {countdown} is less than 11:
 					if {countdown.r} is not set:
