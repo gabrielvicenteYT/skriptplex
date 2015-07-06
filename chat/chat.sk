@@ -2,9 +2,12 @@
 #Chat
 #
 on chat:
+  cancel event
+  if {muted::%uuid of player%} is set:
+    stop
   if {level::%uuid of player%} is set:
     set {_level} to {level::%uuid of player%}
-    if {level::%uuid of player%} is more than 0:
+    if {level::%uuid of player%} is more than -1:
       set {_color} to "&7"
       if {level::%uuid of player%} is more than 19:
        set {_color} to "&9"
@@ -18,6 +21,7 @@ on chat:
             set {_color} to "&4"
   else:
     set {_level} to 0
+    set {_color} to "&7"
   if {rank::%uuid of player%} is set:
     if {rank::%uuid of player%} is "ultra":
       set {_rank} to "&b&lULTRA"
@@ -27,5 +31,5 @@ on chat:
       set {_rank} to "&a&lLEGEND"
   else:
     set {_rank} to ""
-  send "%colored {_color}%%{_level}% 
+  send "%colored {_color}%%{_level}% %colored {_rank}% &e%player% &f%message%"
     
