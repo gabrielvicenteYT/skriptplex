@@ -1,6 +1,8 @@
 #
 #Lobby Chat
 #
+on join:
+  set join message to ""
 on chat:
   cancel event
   if {muted::%uuid of player%} is set:
