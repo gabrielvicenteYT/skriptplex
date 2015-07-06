@@ -3,6 +3,8 @@
 #
 on join:
   set join message to ""
+on quit:
+  set quit message to ""
 on chat:
   cancel event
   if {muted::%uuid of player%} is set:
