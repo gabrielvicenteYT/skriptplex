@@ -1,5 +1,5 @@
 #
-#Chat
+#Lobby Chat
 #
 on chat:
   cancel event
