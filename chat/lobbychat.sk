@@ -25,16 +25,32 @@ on chat:
   if {rank::%uuid of player%} is set:
     if {rank::%uuid of player%} is "ultra":
       set {_rank} to "&b&lULTRA "
-    if {rank::%uuid of player%} is "hero":
+    else if {rank::%uuid of player%} is "hero":
       set {_rank} to "&d&lHERO "
-    if {rank::%uuid of player%} is "legend":
+    else if {rank::%uuid of player%} is "legend":
       set {_rank} to "&a&lLEGEND "
-    if {rank::%uuid of player%} is "twitch":
+    else if {rank::%uuid of player%} is "twitch":
       set {_rank} to "&5&lTWITCH "
-    if {rank::%uuid of player%} is "trainee":
+    else if {rank::%uuid of player%} is "youtube":
+      set {_rank} to "&c&lYOUTUBE  "
+    else if {rank::%uuid of player%} is "dev":
+      set {_rank} to "&c&lDEV  "
+    else if {rank::%uuid of player%} is "jrdev":
+      set {_rank} to "&c&lJR.DEV  "
+    else if {rank::%uuid of player%} is "builder":
+      set {_rank} to "&6&lBUILDER "
+    else if {rank::%uuid of player%} is "trainee":
       set {_rank} to "&9&lTRAINEE "
-    if {rank::%uuid of player%} is "mod":
+    else if {rank::%uuid of player%} is "mod":
       set {_rank} to "&6&lMOD "
+    else if {rank::%uuid of player%} is "srmod":
+      set {_rank} to "&6&lSR.MOD "
+    else if {rank::%uuid of player%} is "admin":
+      set {_rank} to "&c&lADMIN "
+    else if {rank::%uuid of player%} is "owner":
+      set {_rank} to "&4&lOWNER "
+    else if {rank::%uuid of player%} is "op":
+      set {_rank} to "&4&lOP "
   else:
     set {_rank} to ""
   send "%colored {_color}%%{_level}% %colored {_rank}%&e%player% &f%message%"
