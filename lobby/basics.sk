@@ -15,7 +15,7 @@ on join:
   set slot 6 of player to a glistering melon named "&a/hostserver"
   set slot 7 of player to player's skull named "&a/stats"
   set slot 8 of player to a redstone comparator named "&a/prefs"
-on right click with chest:
+on click with chest:
   cancel event
   wait 1 tick
   open chest with 6 rows to the player
