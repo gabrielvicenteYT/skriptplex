@@ -1,1 +1,4 @@
-set {mainlobby::%uuid of player%} to "&b&lServer[nl]%Lobby-1[nl][nl]&a&lGems[nl]%{gems::%uuid of player%}%[nl][nl]"
+set {SkBoard.Board::MainLobby} to "&b&lServer[nl]%Lobby-1[nl][nl]&a&lGems[nl]%{gems::%uuid of player%}%[nl][nl]&6&lRank[nl]%{rank::%uuid of player%}%[nl][nl]&c&lWebsite[nl]www.mineplex.com[nl]----------------"
+
+set {SkBoard.Title::MainLobby} to "[scroll text here]"
+set {SkBoard.Title.Animated::MainLobby} to true
