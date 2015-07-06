@@ -1,0 +1,1 @@
+set {mainlobby::%uuid of player%} to "&b&lServer[nl]%Lobby-1[nl][nl]&a&lGems[nl]%{gems::%uuid of player%}%[nl][nl]"
