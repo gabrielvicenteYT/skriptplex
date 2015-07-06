@@ -5,8 +5,8 @@
 #Where you see Hastag Fix, change the value. This says the online players. It is 0 for testing.
 
 on join:
-	teleport the player to {lobby}
-	if {ingame} is set:
+  teleport the player to {lobby}
+  if {ingame} is set:
     #Spectating Here
 	else:
 		set {board::%uuid of player%} to "lobby"
