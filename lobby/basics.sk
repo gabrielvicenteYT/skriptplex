@@ -1,0 +1,15 @@
+#
+#Lobby Basics
+#
+on inventory click:
+  cancel event
+on join:
+  clear the player's inventory
+  wait 1 tick
+  set slot 0 of player to a compass named "&aGame Menu"
+  set slot 1 of player to a clock named "&aLobby Menu"
+  set slot 2 of player to a written book named "&aRule Book"
+  set slot 4 of player to a chest named "&aCosmetic Menu"
+  set slot 6 of player to a glistering melon named "&a/hostserver"
+  set slot 7 of player to player's skull named "&a/stats"
+  set slot 8 of player to redstone comparator named "&a/prefs"
