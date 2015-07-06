@@ -5,3 +5,6 @@
 {gems::%uuid of player%}
 {coins::%uuid of player%}
 {rank::%uuid of player%}
+{muted::%uuid of player%}
+{level::%uuid of player%}
+{xp::%uuid of player%}
