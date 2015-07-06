@@ -38,4 +38,3 @@ on chat:
   else:
     set {_rank} to ""
   send "%colored {_color}%%{_level}% %colored {_rank}% &e%player% &f%message%"
-    
