@@ -4,6 +4,8 @@
 on inventory click:
   cancel event
 on join:
+  set the player's gamemode to survival
+  teleport the player to {Spawn}
   clear the player's inventory
   wait 1 tick
   set slot 0 of player to a compass named "&aGame Menu"
@@ -12,4 +14,20 @@ on join:
   set slot 4 of player to a chest named "&aCosmetic Menu"
   set slot 6 of player to a glistering melon named "&a/hostserver"
   set slot 7 of player to player's skull named "&a/stats"
-  set slot 8 of player to redstone comparator named "&a/prefs"
+  set slot 8 of player to a redstone comparator named "&a/prefs"
+on right click with chest:
+  cancel event
+  wait 1 tick
+  open chest with 6 rows to the player
+  wait 1 tick
+  if {coins::%uuid of player%} is set:
+    format slot 4 of player with a sunflower named "&a&l%{coins::%uuid of player%}% Coins" with lore "||&ePurchase Coins||&fwww.mineplex.com/shop||||&bUltra Rank||&fRecieves 7500 Coins per Month||||&dHero Rank||&fReceieves 15000 Coins per Month" to be unstealable
+  else:
+    format slot 4 of player with a sunflower named "&a&l0 Coins" with lore "||&ePurchase Coins||&fwww.mineplex.com/shop||||&bUltra Rank||&fRecieves 7500 Coins per Month||||&dHero Rank||&fReceieves 15000 Coins per Month" to be unstealable 	
+  format slot 18 of player with a nether star named "&a&lParticle Effects" to close then run [execute player command "menu particleeffects"]
+  format slot 20 of player with a bow named "&a&lGadgets" to close then run [execute player command "menu gadgets"]
+  format slot 22 of player with a leather named "&a&lMorphs" to close then run [execute player command "menu morphs"]
+  format slot 24 of player with a iron horse armor named "&a&lMounts" to close then run [execute player command "menu mounts"]
+  format slot 26 of player with a bone named "&a&lPets" to close then run [execute player command "menu pets"]
+  format slot 48 of player with a golden chestplate named "&a&lCostumes" to close then run [execute player command "menu costumes"]
+  format slot 50 of player with a green music disc named "&a&lMusic" to close then run [execute player command "menu music"]
