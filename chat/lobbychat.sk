@@ -1,4 +1,88 @@
 #
+#MCPE Server Idea List
+#KevinDoesMC
+#
+
+
+#Overall Ideas:
+#	* Currency will be called "tokens"
+#	* Friend support (So you can see if your friend is on.)
+#	* Party system (So you can your friends can play a game together.)
+#	* Decent remake of AuthMe (Login and you will be able to keep playing all over the network.)
+#	* Only allow logged in player's join the hub. (You will be put in a limbo server until you login.)
+#	* Once logged in, you will be put in the hub and from there you can play. (So you don't have to type your password in each time you join a server. [Like some servers])
+
+
+#Donation Ranks:
+#	1. VIP $2.50
+#	2. Elite $5
+#	3. Sponsor $10
+
+#Donation Perks:
+#	1. VIP:
+#		* Chat Tag: "&2&L[&a&lVIP&2&l]"
+#		* Nametag Tag: "&2&lVIP"
+#		* Token Booster of 2x
+#		* Fly in the hub
+#	2. Elite:
+#		* Chat Tag: "&4&L[&c&lElite&4&l]"
+#		* Nametag Tag: "&c&lElite"
+#		* Token Booster of 3x
+#		* Fly in the hub
+#	3. Sponsor:
+#		* Chat Tag: "&5&L[&d&lSponsor&5&l]"
+#		* Nametag Tag: "&d&lElite"
+#		* Token Booster of 5x
+#		* Fly in the hub
+
+
+#Games:
+#	1. Block Party
+#	2. Dodgeball
+#	3. OITC
+#	4. Cookie Clicker
+#	5. Kit PVP
+#	6. Epic Hub
+#	7. Build Battle
+#	8. Deathrun
+#	9. Paintball
+
+#Ideas for Games:
+#	1. Block Party:
+#		* Stained Clay
+#		* Speed I
+#		* FFA
+#		* 2 Tokens Per Color Switch, +10 Tokens if you win, +5 Tokens if you lose.
+#	2. Dodgeball:
+#		* Teams are red versus blue
+#		* 3 lives
+#		* 2 Tokens Per Kill, +10 Tokens if you win, +5 Tokens if you lose.
+#	3. OITC:
+#		* You are given 1 arrow
+#		* FFA
+#		* 1 Tokens Per Kill, +10 Tokens if you win, +5 Tokens if you lose.
+#	4. Cookie Clicker:
+#		* Just a simple game where you click on a cookie
+#		* Same as Cookie Clicker
+#		* Single Player COMPLETELY
+#		* Not sure how easy it would be to give tokens for this type of game.
+#	5. Kit PVP:
+#		* A few kits
+#		* PVP sucks in this game
+#		* 3 Tokens Per Kill
+#	6. Epic Hub:
+#		* Cool animated flooring
+#		* Speed I
+#	7. Build Battle:
+#		* Basically build battle from Hypixel (Fuck Mineplex's version.)
+#		* +10 for participating, +5 if you are in the top 3, +3 if you are #1.
+#	8. Deathrun:
+#		* Basically Deathrun from the HiveMC.
+#		* 8 for participating, +3 if you are in the top 3, +3 if you are #1.	
+#	9. Paintball:
+#		* Remade version of Hypixel's Paintball
+#		* 1 Tokens Per Kill, +10 Tokens if you win, +5 Tokens if you lose.
+#
 #Lobby Chat
 #
 on chat:
@@ -24,17 +108,17 @@ on chat:
     set {_color} to "&7"
   if {rank::%uuid of player%} is set:
     if {rank::%uuid of player%} is "ultra":
-      set {_rank} to "&b&lULTRA"
+      set {_rank} to "&b&lULTRA "
     if {rank::%uuid of player%} is "hero":
-      set {_rank} to "&d&lHERO"
+      set {_rank} to "&d&lHERO "
     if {rank::%uuid of player%} is "legend":
-      set {_rank} to "&a&lLEGEND"
+      set {_rank} to "&a&lLEGEND "
     if {rank::%uuid of player%} is "twitch":
-      set {_rank} to "&5&lTWITCH"
+      set {_rank} to "&5&lTWITCH "
     if {rank::%uuid of player%} is "trainee":
-      set {_rank} to "&9&lTRAINEE"
+      set {_rank} to "&9&lTRAINEE "
     if {rank::%uuid of player%} is "mod":
-      set {_rank} to "&6&lMOD"
+      set {_rank} to "&6&lMOD "
   else:
     set {_rank} to ""
-  send "%colored {_color}%%{_level}% %colored {_rank}% &e%player% &f%message%"
+  send "%colored {_color}%%{_level}% %colored {_rank}%&e%player% &f%message%"
