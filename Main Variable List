@@ -1,0 +1,7 @@
+#
+#Variable List
+#
+
+{gems::%uuid of player%}
+{coins::%uuid of player%}
+{rank::%uuid of player%}
