@@ -13,9 +13,9 @@ on chat:
         set {_color} to "&9"
         if {level::%uuid of player%} is more than 39:
           set {_color} to "&2"
-            if {level::%uuid of player%} is more than 59:
-             set {_color} to "&e"
-             if {level::%uuid of player%} is more than 79:
+          if {level::%uuid of player%} is more than 59:
+            set {_color} to "&e"
+            if {level::%uuid of player%} is more than 79:
               set {_color} to "&c"
               if {level::%uuid of player%} is more than 100:
                 set {_color} to "&4"
