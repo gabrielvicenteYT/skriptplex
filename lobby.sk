@@ -1,0 +1,9 @@
+command /loc <number>:
+  trigger:
+    player is op
+    set {loc.%arg 1%} to location of player
+    message "%arg 1% set to your location."
+command /testloc <number>:
+  trigger:
+    player is op
+    teleport player to {loc.%arg 1%}
