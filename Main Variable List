@@ -8,3 +8,5 @@
 {muted::%uuid of player%}
 {level::%uuid of player%}
 {xp::%uuid of player%}
+{loc.%argument%}
+{gamemode}
