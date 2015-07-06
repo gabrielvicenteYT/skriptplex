@@ -3,15 +3,29 @@
 #
 on chat:
   if {level::%uuid of player%} is set:
-    if {level::%uuid of player%} is less than 101:
-      if {level::%uuid of player%} is less than 80:
-        if {level::%uuid of player%} is less than 60:
-          if {level::%uuid of player%} is less than 40:
-            if {level::%uuid of player%} is less than 20:
-              if {level::%uuid of player%} is 0:
-              
-              else:
-                if {level::%uuid of player%} is less than 0
-     send "%{level::%uuid of player%}%
+    set {_level} to {level::%uuid of player%}
+    if {level::%uuid of player%} is more than 0:
+      set {_color} to "&7"
+      if {level::%uuid of player%} is more than 19:
+       set {_color} to "&9"
+       if {level::%uuid of player%} is more than 39:
+        set {_color} to "&a"
+        if {level::%uuid of player%} is more than 59:
+          set {_color} to "&e"
+          if {level::%uuid of player%} is more than 79:
+           set {_color} to "&c"
+           if {level::%uuid of player%} is more than 100:
+            set {_color} to "&4"
   else:
+    set {_level} to 0
+  if {rank::%uuid of player%} is set:
+    if {rank::%uuid of player%} is "ultra":
+      set {_rank} to "&b&lULTRA"
+    if {rank::%uuid of player%} is "hero":
+      set {_rank} to "&d&lHERO"
+    if {rank::%uuid of player%} is "legend":
+      set {_rank} to "&a&lLEGEND"
+  else:
+    set {_rank} to ""
+  send "%colored {_color}%%{_level}% 
     
